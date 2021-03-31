@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>Yellowkitchen</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="" class="header__logo">
+            <svg width="186" height="24" viewBox="0 0 186 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.168 5.608L8.416 24H4L6.424 18.544L0.975998 5.608H5.56L8.656 13.984L11.728 5.608H16.168Z" fill="#3F4255"/>
+                <path d="M31.4761 12.088C31.4761 12.472 31.4521 12.872 31.4041 13.288H22.1161C22.1801 14.12 22.4441 14.76 22.9081 15.208C23.3881 15.64 23.9721 15.856 24.6601 15.856C25.6841 15.856 26.3961 15.424 26.7961 14.56H31.1641C30.9401 15.44 30.5321 16.232 29.9401 16.936C29.3641 17.64 28.6361 18.192 27.7561 18.592C26.8761 18.992 25.8921 19.192 24.8041 19.192C23.4921 19.192 22.3241 18.912 21.3001 18.352C20.2761 17.792 19.4761 16.992 18.9001 15.952C18.3241 14.912 18.0361 13.696 18.0361 12.304C18.0361 10.912 18.3161 9.696 18.8761 8.656C19.4521 7.616 20.2521 6.816 21.2761 6.256C22.3001 5.696 23.4761 5.416 24.8041 5.416C26.1001 5.416 27.2521 5.688 28.2601 6.232C29.2681 6.776 30.0521 7.552 30.6121 8.56C31.1881 9.568 31.4761 10.744 31.4761 12.088ZM27.2761 11.008C27.2761 10.304 27.0361 9.744 26.5561 9.328C26.0761 8.912 25.4761 8.704 24.7561 8.704C24.0681 8.704 23.4841 8.904 23.0041 9.304C22.5401 9.704 22.2521 10.272 22.1401 11.008H27.2761Z" fill="#3F4255"/>
+                <path d="M38.9451 1.24872e-05V19H34.8411V1.24872e-05H38.9451Z" fill="#3F4255"/>
+                <path d="M47.2232 1.24872e-05V19H43.1192V1.24872e-05H47.2232Z" fill="#3F4255"/>
+                <path d="M57.4934 19.192C56.1814 19.192 54.9974 18.912 53.9414 18.352C52.9014 17.792 52.0774 16.992 51.4694 15.952C50.8774 14.912 50.5814 13.696 50.5814 12.304C50.5814 10.928 50.8854 9.72 51.4934 8.68C52.1014 7.624 52.9334 6.816 53.9894 6.256C55.0454 5.696 56.2294 5.416 57.5414 5.416C58.8534 5.416 60.0374 5.696 61.0934 6.256C62.1494 6.816 62.9814 7.624 63.5894 8.68C64.1974 9.72 64.5014 10.928 64.5014 12.304C64.5014 13.68 64.1894 14.896 63.5654 15.952C62.9574 16.992 62.1174 17.792 61.0454 18.352C59.9894 18.912 58.8054 19.192 57.4934 19.192ZM57.4934 15.64C58.2774 15.64 58.9414 15.352 59.4854 14.776C60.0454 14.2 60.3254 13.376 60.3254 12.304C60.3254 11.232 60.0534 10.408 59.5094 9.832C58.9814 9.256 58.3254 8.968 57.5414 8.968C56.7414 8.968 56.0774 9.256 55.5494 9.832C55.0214 10.392 54.7574 11.216 54.7574 12.304C54.7574 13.376 55.0134 14.2 55.5254 14.776C56.0534 15.352 56.7094 15.64 57.4934 15.64Z" fill="#3F4255"/>
+                <path d="M87.1026 5.608L83.4786 19H78.9426L76.8306 10.312L74.6466 19H70.1346L66.4866 5.608H70.5906L72.4866 15.184L74.7426 5.608H79.0866L81.3666 15.136L83.2386 5.608H87.1026Z" fill="#3F4255"/>
+                <path d="M97.9077 19L93.3957 13.336V19H90.0357V1.24872e-05H93.3957V11.344L97.8597 5.704H102.228L96.3717 12.376L102.276 19H97.9077Z" fill="#3F4255"/>
+                <path d="M106.936 3.96801C106.344 3.96801 105.848 3.78401 105.448 3.41601C105.064 3.03201 104.872 2.56001 104.872 2.00001C104.872 1.44001 105.064 0.976012 105.448 0.608012C105.848 0.224012 106.344 0.0320121 106.936 0.0320121C107.528 0.0320121 108.016 0.224012 108.4 0.608012C108.8 0.976012 109 1.44001 109 2.00001C109 2.56001 108.8 3.03201 108.4 3.41601C108.016 3.78401 107.528 3.96801 106.936 3.96801ZM108.611 5.704V19H105.251V5.704H108.611Z" fill="#3F4255"/>
+                <path d="M117.043 8.464V14.896C117.043 15.344 117.147 15.672 117.355 15.88C117.579 16.072 117.947 16.168 118.459 16.168H120.019V19H117.907C115.075 19 113.659 17.624 113.659 14.872V8.464H112.075V5.704H113.659L113.616 0H117L117.043 5.704H120.019V8.464H117.043Z" fill="#3F4255"/>
+                <path d="M122.772 12.352C122.772 10.976 123.052 9.776 123.612 8.752C124.172 7.712 124.948 6.912 125.94 6.352C126.932 5.776 128.068 5.488 129.348 5.488C130.996 5.488 132.356 5.904 133.428 6.736C134.516 7.552 135.244 8.704 135.612 10.192H131.988C131.796 9.616 131.468 9.168 131.004 8.848C130.556 8.512 129.996 8.344 129.324 8.344C128.364 8.344 127.604 8.696 127.044 9.4C126.484 10.088 126.204 11.072 126.204 12.352C126.204 13.616 126.484 14.6 127.044 15.304C127.604 15.992 128.364 16.336 129.324 16.336C130.684 16.336 131.572 15.728 131.988 14.512H135.612C135.244 15.952 134.516 17.096 133.428 17.944C132.34 18.792 130.98 19.216 129.348 19.216C128.068 19.216 126.932 18.936 125.94 18.376C124.948 17.8 124.172 17 123.612 15.976C123.052 14.936 122.772 13.728 122.772 12.352Z" fill="#3F4255"/>
+                <path d="M146.761 5.512C147.769 5.512 148.665 5.736 149.449 6.184C150.233 6.616 150.841 7.264 151.273 8.128C151.721 8.976 151.945 10 151.945 11.2V19H148.585V11.656C148.585 10.6 148.321 9.792 147.793 9.232C147.265 8.656 146.545 8.368 145.633 8.368C144.705 8.368 143.969 8.656 143.425 9.232C142.897 9.792 142.633 10.6 142.633 11.656V19H139.273V0H142.633V7.36C143.065 6.784 143.641 6.336 144.361 6.016C145.081 5.68 145.881 5.512 146.761 5.512Z" fill="#3F4255"/>
+                <path d="M168.7 12.064C168.7 12.544 168.668 12.976 168.604 13.36H158.884C158.964 14.32 159.3 15.072 159.892 15.616C160.484 16.16 161.212 16.432 162.076 16.432C163.324 16.432 164.212 15.896 164.74 14.824H168.364C167.98 16.104 167.244 17.16 166.156 17.992C165.068 18.808 163.732 19.216 162.148 19.216C160.868 19.216 159.716 18.936 158.692 18.376C157.684 17.8 156.892 16.992 156.316 15.952C155.756 14.912 155.476 13.712 155.476 12.352C155.476 10.976 155.756 9.768 156.316 8.728C156.876 7.688 157.66 6.888 158.668 6.328C159.676 5.768 160.836 5.488 162.148 5.488C163.412 5.488 164.54 5.76 165.532 6.304C166.54 6.848 167.316 7.624 167.86 8.632C168.42 9.624 168.7 10.768 168.7 12.064ZM165.22 11.104C165.204 10.24 164.892 9.552 164.284 9.04C163.676 8.512 162.932 8.248 162.052 8.248C161.22 8.248 160.516 8.504 159.94 9.016C159.38 9.512 159.036 10.208 158.908 11.104H165.22Z" fill="#3F4255"/>
+                <path d="M179.721 5.512C181.305 5.512 182.585 6.016 183.561 7.024C184.537 8.016 185.025 9.408 185.025 11.2V19H181.665V11.656C181.665 10.6 181.401 9.792 180.873 9.232C180.345 8.656 179.625 8.368 178.713 8.368C177.785 8.368 177.049 8.656 176.505 9.232C175.977 9.792 175.713 10.6 175.713 11.656V19H172.353V5.704H175.713V7.36C176.161 6.784 176.729 6.336 177.417 6.016C178.121 5.68 178.889 5.512 179.721 5.512Z" fill="#3F4255"/>
+            </svg>
+            <div class="header-background"></div>
+        </a>
+        <div class="header__menu">
+            <a href="" class="header__login">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 2C9.1 2 10 2.9 10 4C10 5.1 9.1 6 8 6C6.9 6 6 5.1 6 4C6 2.9 6.9 2 8 2ZM8 12C10.7 12 13.8 13.29 14 14H8H2C2.23 13.28 5.31 12 8 12ZM8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z" fill="#9093A6"/>
+                </svg>
+                <span class="button-1">Log In</span>
+            </a>
+            <a href="" class="header__basket">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z" fill="#9093A6"/>
+                </svg>
+                <span class="button-1">0</span>
+            </a>
+            <div class="header__burger">
+                <div class="header__elements">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <img class="header-exit" src="img/header/01.png" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main">
+    <section class="banner">
+        <div class="container">
+            <div class="banner__top">
+                <div class="banner__text">
+                    <h1 class="title-1">Your Food court at home</h1>
+                    <div class="banner__buttons">
+                        <a class="button-1" href="">Delivery<span class="paragraph-2">Order in</span></a>
+                        <a class="button-1" href="">Takeout<span class="paragraph-2">Grab and go</span></a>
+                    </div>
+                </div>
+                <div class="banner__images">
+                    <img src="img/banner/01.png" alt="">
+                    <img src="img/banner/05.png" alt="">
+                    <img src="img/banner/06.png" alt="">
+                </div>
+            </div>
+            <div class="banner__bottom">
+                <div class="banner__dignity">
+                    <img src="img/banner/02.png" alt="">
+                    <p class="paragraph-1">Free delivery<br> from 29 euros</p>
+                </div>
+                <div class="banner__dignity">
+                    <img src="img/banner/03.png" alt="">
+                    <p class="paragraph-1">Free delivery<br> from 29 euros</p>
+                </div>
+                <div class="banner__dignity">
+                    <img src="img/banner/04.png" alt="">
+                    <p class="paragraph-1">Only fresh<br> and French products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="restaurants">
+        <div class="container">
+            <div class="restaurants__text">
+                <h1 class="title-1">Restaurants</h1>
+                <a class="secondary" href="">show all</a>
+            </div>
+            <div class="restaurants__slider-wrapper">
+                <div class="swiper-container restaurants__slider">
+                    <div class="swiper-wrapper restaurants__slides">
+                        <div class="restaurants__slide swiper-slide">
+                            <div class="restaurants__restaurant">
+                                <img src="img/restaurants/01.png" alt="">
+                                <div class="restaurants__logo">
+                                    <img src="img/restaurants/05.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurants__slide swiper-slide">
+                            <div class="restaurants__restaurant">
+                                <img src="img/restaurants/02.png" alt="">
+                                <div class="restaurants__logo">
+                                    <img src="img/restaurants/06.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurants__slide swiper-slide">
+                            <div class="restaurants__restaurant">
+                                <img src="img/restaurants/03.png" alt="">
+                                <div class="restaurants__logo">
+                                    <img src="img/restaurants/07.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurants__slide swiper-slide">
+                            <div class="restaurants__restaurant">
+                                <img src="img/restaurants/04.png" alt="">
+                                <div class="restaurants__logo">
+                                    <img src="img/restaurants/08.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurants__slide swiper-slide">
+                            <div class="restaurants__restaurant">
+                                <img src="img/restaurants/04.png" alt="">
+                                <div class="restaurants__logo">
+                                    <img src="img/restaurants/08.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurants__slide swiper-slide">
+                            <div class="restaurants__restaurant">
+                                <img src="img/restaurants/04.png" alt="">
+                                <div class="restaurants__logo">
+                                    <img src="img/restaurants/08.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtl restaurants__subtl-prev">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="#9093A6"/>
+                    </svg>
+                </div>
+                <div class="subtl restaurants__subtl-next">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 9L12.17 9L6.58 14.59L8 16L16 8L8 0L6.59 1.41L12.17 7L0 7L0 9Z" fill="#9093A6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="send">
+        <div class="container">
+            <div class="send__left">
+                <h1 class="title-1">Your nearest restaurants</h1>
+                <p class="paragraph-1">Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
+            </div>
+            <form action="">
+                <input class="paragraph-1" type="text" placeholder="Enter delivery address">
+                <button class="primary" type="submit">send</button>
+            </form>
+        </div>
+    </section>
+    <section class="specialities">
+        <div class="container">
+            <div class="specialities__text">
+                <h1 class="title-1">Specialities</h1>
+                <a href="" class="secondary">show all</a>
+            </div>
+            <div class="specialities__slider-wrapper">
+                <div class="swiper-container specialities__slider">
+                    <div class="swiper-wrapper specialities__slides">
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/01.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/02.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/03.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/04.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/05.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/06.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/07.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/08.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/01.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/02.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/03.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/04.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/05.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/06.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/07.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide specialities__slide">
+                            <div class="specialities__speciality">
+                                <img src="img/specialities/08.png" alt="">
+                                <p class="paragraph-1">Bagel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtl subtl__next">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 9L12.17 9L6.58 14.59L8 16L16 8L8 0L6.59 1.41L12.17 7L0 7L0 9Z" fill="#9093A6"/>
+                    </svg>
+                </div>
+                <div class="subtl subtl__prev">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="#9093A6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="numbers">
+        <div class="container">
+            <div class="numbers__block">
+                <div class="numbers__number">
+                    <h3 class="numbers-change" data-limit="11">0</h3>
+                    <div class="numbers-around"></div>
+                </div>
+                <h4 class="title-2">kitchen</h4>
+            </div>
+            <div class="numbers__block">
+                <div class="numbers__number">
+                    <h3 class="numbers-change" data-limit="1">0</h3>
+                    <div class="numbers-around"></div>
+                </div>
+                <h4 class="title-2">specialties</h4>
+            </div>
+            <div class="numbers__block">
+                <div class="numbers__number">
+                    <h3 class="numbers-change" data-limit="7">0</h3>
+                    <div class="numbers-around"></div>
+                </div>
+                <h4 class="title-2">restaurants</h4>
+            </div>
+            <div class="numbers__block">
+                <div class="numbers__number">
+                    <h3  class="numbers-change" data-limit="12">0</h3>
+                </div>
+                <h4 class="title-2">transport costs</h4>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2105.753416241127!2d52.65460831632832!3d58.14429918125994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e4f3d15602d1f1%3A0x37240f19fcb5d012!2z0JfQsNC70YPQv9CwINCx0L7QsdGA0LA!5e0!3m2!1sru!2sua!4v1614939969481!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="about__instagram">
+                <h1 class="title-1">#YellowKitchens <span>in Instagram</span></h1>
+                <div class="about__images">
+                    <img src="img/about/01.png" alt="">
+                    <img src="img/about/02.png" alt="">
+                    <img src="img/about/03.png" alt="">
+                    <img src="img/about/04.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fixed">
+        <div class="container">
+            <div class="fixed__menu">
+                <div class="fixed__top">
+                    <div class="fixed__number">
+                        <img src="img/fixed/01.png" alt="">
+                        <span class="button-1">0800 111 126</span>
+                    </div>
+                    <p class="paragraph-2">8:00 - 22:00</p>
+                </div>
+                <div class="fixed__links">
+                    <a href="" class="button-1">Delivery info</a>
+                    <a href="" class="button-1">About us</a>
+                    <a href="" class="button-1">Restaurants</a>
+                    <a href="" class="button-1">Specialities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__column">
+                <a href="" class="footer__logo">
+                    <svg width="185" height="24" viewBox="0 0 185 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.192 5.608L7.44 24H3.024L5.448 18.544L0 5.608H4.584L7.68 13.984L10.752 5.608H15.192Z" fill="white"/>
+                        <path d="M30.5001 12.088C30.5001 12.472 30.4761 12.872 30.4281 13.288H21.1401C21.2041 14.12 21.4681 14.76 21.9321 15.208C22.4121 15.64 22.9961 15.856 23.6841 15.856C24.7081 15.856 25.4201 15.424 25.8201 14.56H30.1881C29.9641 15.44 29.5561 16.232 28.9641 16.936C28.3881 17.64 27.6601 18.192 26.7801 18.592C25.9001 18.992 24.9161 19.192 23.8281 19.192C22.5161 19.192 21.3481 18.912 20.3241 18.352C19.3001 17.792 18.5001 16.992 17.9241 15.952C17.3481 14.912 17.0601 13.696 17.0601 12.304C17.0601 10.912 17.3401 9.696 17.9001 8.656C18.4761 7.616 19.2761 6.816 20.3001 6.256C21.3241 5.696 22.5001 5.416 23.8281 5.416C25.1241 5.416 26.2761 5.688 27.2841 6.232C28.2921 6.776 29.0761 7.552 29.6361 8.56C30.2121 9.568 30.5001 10.744 30.5001 12.088ZM26.3001 11.008C26.3001 10.304 26.0601 9.744 25.5801 9.328C25.1001 8.912 24.5001 8.704 23.7801 8.704C23.0921 8.704 22.5081 8.904 22.0281 9.304C21.5641 9.704 21.2761 10.272 21.1641 11.008H26.3001Z" fill="white"/>
+                        <path d="M37.9691 1.24872e-05V19H33.8651V1.24872e-05H37.9691Z" fill="white"/>
+                        <path d="M46.2472 1.24872e-05V19H42.1432V1.24872e-05H46.2472Z" fill="white"/>
+                        <path d="M56.5174 19.192C55.2054 19.192 54.0214 18.912 52.9654 18.352C51.9254 17.792 51.1014 16.992 50.4934 15.952C49.9014 14.912 49.6054 13.696 49.6054 12.304C49.6054 10.928 49.9094 9.72 50.5174 8.68C51.1254 7.624 51.9574 6.816 53.0134 6.256C54.0694 5.696 55.2534 5.416 56.5654 5.416C57.8774 5.416 59.0614 5.696 60.1174 6.256C61.1734 6.816 62.0054 7.624 62.6134 8.68C63.2214 9.72 63.5254 10.928 63.5254 12.304C63.5254 13.68 63.2134 14.896 62.5894 15.952C61.9814 16.992 61.1414 17.792 60.0694 18.352C59.0134 18.912 57.8294 19.192 56.5174 19.192ZM56.5174 15.64C57.3014 15.64 57.9654 15.352 58.5094 14.776C59.0694 14.2 59.3494 13.376 59.3494 12.304C59.3494 11.232 59.0774 10.408 58.5334 9.832C58.0054 9.256 57.3494 8.968 56.5654 8.968C55.7654 8.968 55.1014 9.256 54.5734 9.832C54.0454 10.392 53.7814 11.216 53.7814 12.304C53.7814 13.376 54.0374 14.2 54.5494 14.776C55.0774 15.352 55.7334 15.64 56.5174 15.64Z" fill="white"/>
+                        <path d="M86.1266 5.608L82.5026 19H77.9666L75.8546 10.312L73.6706 19H69.1586L65.5106 5.608H69.6146L71.5106 15.184L73.7666 5.608H78.1106L80.3906 15.136L82.2626 5.608H86.1266Z" fill="white"/>
+                        <path d="M96.9317 19L92.4197 13.336V19H89.0597V1.24872e-05H92.4197V11.344L96.8837 5.704H101.252L95.3957 12.376L101.3 19H96.9317Z" fill="white"/>
+                        <path d="M105.96 3.96801C105.368 3.96801 104.872 3.78401 104.472 3.41601C104.088 3.03201 103.896 2.56001 103.896 2.00001C103.896 1.44001 104.088 0.976012 104.472 0.608012C104.872 0.224012 105.368 0.0320121 105.96 0.0320121C106.552 0.0320121 107.04 0.224012 107.424 0.608012C107.824 0.976012 108.024 1.44001 108.024 2.00001C108.024 2.56001 107.824 3.03201 107.424 3.41601C107.04 3.78401 106.552 3.96801 105.96 3.96801ZM107.635 5.704V19H104.275V5.704H107.635Z" fill="white"/>
+                        <path d="M116.067 8.464V14.896C116.067 15.344 116.171 15.672 116.379 15.88C116.603 16.072 116.971 16.168 117.483 16.168H119.043V19H116.931C114.099 19 112.683 17.624 112.683 14.872V8.464H111.099V5.704H112.683L112.64 0H116.024L116.067 5.704H119.043V8.464H116.067Z" fill="white"/>
+                        <path d="M121.796 12.352C121.796 10.976 122.076 9.776 122.636 8.752C123.196 7.712 123.972 6.912 124.964 6.352C125.956 5.776 127.092 5.488 128.372 5.488C130.02 5.488 131.38 5.904 132.452 6.736C133.54 7.552 134.268 8.704 134.636 10.192H131.012C130.82 9.616 130.492 9.168 130.028 8.848C129.58 8.512 129.02 8.344 128.348 8.344C127.388 8.344 126.628 8.696 126.068 9.4C125.508 10.088 125.228 11.072 125.228 12.352C125.228 13.616 125.508 14.6 126.068 15.304C126.628 15.992 127.388 16.336 128.348 16.336C129.708 16.336 130.596 15.728 131.012 14.512H134.636C134.268 15.952 133.54 17.096 132.452 17.944C131.364 18.792 130.004 19.216 128.372 19.216C127.092 19.216 125.956 18.936 124.964 18.376C123.972 17.8 123.196 17 122.636 15.976C122.076 14.936 121.796 13.728 121.796 12.352Z" fill="white"/>
+                        <path d="M145.785 5.512C146.793 5.512 147.689 5.736 148.473 6.184C149.257 6.616 149.865 7.264 150.297 8.128C150.745 8.976 150.969 10 150.969 11.2V19H147.609V11.656C147.609 10.6 147.345 9.792 146.817 9.232C146.289 8.656 145.569 8.368 144.657 8.368C143.729 8.368 142.993 8.656 142.449 9.232C141.921 9.792 141.657 10.6 141.657 11.656V19H138.297V0H141.657V7.36C142.089 6.784 142.665 6.336 143.385 6.016C144.105 5.68 144.905 5.512 145.785 5.512Z" fill="white"/>
+                        <path d="M167.724 12.064C167.724 12.544 167.692 12.976 167.628 13.36H157.908C157.988 14.32 158.324 15.072 158.916 15.616C159.508 16.16 160.236 16.432 161.1 16.432C162.348 16.432 163.236 15.896 163.764 14.824H167.388C167.004 16.104 166.268 17.16 165.18 17.992C164.092 18.808 162.756 19.216 161.172 19.216C159.892 19.216 158.74 18.936 157.716 18.376C156.708 17.8 155.916 16.992 155.34 15.952C154.78 14.912 154.5 13.712 154.5 12.352C154.5 10.976 154.78 9.768 155.34 8.728C155.9 7.688 156.684 6.888 157.692 6.328C158.7 5.768 159.86 5.488 161.172 5.488C162.436 5.488 163.564 5.76 164.556 6.304C165.564 6.848 166.34 7.624 166.884 8.632C167.444 9.624 167.724 10.768 167.724 12.064ZM164.244 11.104C164.228 10.24 163.916 9.552 163.308 9.04C162.7 8.512 161.956 8.248 161.076 8.248C160.244 8.248 159.54 8.504 158.964 9.016C158.404 9.512 158.06 10.208 157.932 11.104H164.244Z" fill="white"/>
+                        <path d="M178.745 5.512C180.329 5.512 181.609 6.016 182.585 7.024C183.561 8.016 184.049 9.408 184.049 11.2V19H180.689V11.656C180.689 10.6 180.425 9.792 179.897 9.232C179.369 8.656 178.649 8.368 177.737 8.368C176.809 8.368 176.073 8.656 175.529 9.232C175.001 9.792 174.737 10.6 174.737 11.656V19H171.377V5.704H174.737V7.36C175.185 6.784 175.753 6.336 176.441 6.016C177.145 5.68 177.913 5.512 178.745 5.512Z" fill="white"/>
+                    </svg>
+                    <div class="footer-logo_background"></div>
+                </a>
+                <div class="footer__download">
+                    <a href="" class="footer__store">
+                        <img src="img/footer/01.png" alt="">
+                    </a>
+                    <a href="" class="footer__store">
+                        <img src="img/footer/02.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h4 class="title-2">About us</h4>
+                <div class="footer__links">
+                    <a class="button-1" href="">Concept</a>
+                    <a class="button-1" href="">Franchise</a>
+                    <a class="button-1" href="">Business</a>
+                    <a class="button-1" href="">Restaurant signup</a>
+                    <a class="button-1" href="">For Investors</a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h4 class="title-2">Get help</h4>
+                <div class="footer__links">
+                    <a class="button-1" href="">Read FAQs</a>
+                    <a class="button-1" href="">Restaurants</a>
+                    <a class="button-1" href="">Specialities</a>
+                    <a class="button-1" href="">Sign up to deliver</a>
+                    <a class="button-1" href="">English</a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h4 class="title-2">Contact us</h4>
+                <div class="footer__links">
+                    <p class="paragraph-1">Yellow kitchen Paris 11</p>
+                    <p class="paragraph-1">69 avenue de la Republique 75011<br> Paris</p>
+                    <a class="button-1" href="">0800 111 126</a>
+                    <a class="button-1" href="">contact@yellowkitchens.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__social">
+                <a href=""><img src="img/footer/03.png" alt=""></a>
+                <a href=""><img src="img/footer/04.png" alt=""></a>
+                <a href=""><img src="img/footer/05.png" alt=""></a>
+            </div>
+            <div class="footer__copyright">
+                <a class="button-2" href="">Privacy Policy</a>
+                <a class="button-2" href="">Terms</a>
+                <p class="paragraph-2">© 2020 Yellow kitchen</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

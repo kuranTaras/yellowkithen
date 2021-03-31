@@ -1,0 +1,46 @@
+.specialities
+  padding: 0 20px
+  .container
+    display: block
+    padding: 72px 0
+    max-width: 1280px
+    .specialities__text
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 36px
+      padding: 0 12px
+      @media (max-width: $mobileL)
+        flex-direction: column
+        margin-bottom: 30px
+      h1
+        @media (max-width: $mobileL)
+          margin-bottom: 10px
+    .specialities__slider-wrapper
+      position: relative
+      width: 100%
+      .specialities__slider
+        padding: 12px 12px
+        .specialities__slides
+          .specialities__slide
+            .specialities__speciality
+              background: #FFFFFF
+              box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08)
+              border-radius: 6px
+              padding: 24px 0
+              display: flex
+              flex-direction: column
+              align-items: center
+              p
+                margin-top: 16px
+              img
+                width: 48px
+                height: 48px
+      .subtl__prev
+        left: -12px
+        @media (max-width: $mobileL)
+          display: none
+      .subtl__next
+        right: -12px
+        @media (max-width: $mobileL)
+          display: none

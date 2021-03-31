@@ -1,0 +1,110 @@
+.banner
+  padding: 0 20px
+  .container
+    padding: 97px 0 48px 0
+    flex-direction: column
+    @media (max-width: $tabletL)
+      padding-top: 24px
+    .banner__top
+      display: flex
+      justify-content: space-between
+      @media (max-width: $tabletS)
+        flex-direction: column
+      .banner__text
+        width: 42.8%
+        @media (max-width: $tabletS)
+          width: 100%
+        h1
+          font-size: 58px
+          margin-top: 95px
+          @media (max-width: $tabletL)
+            font-size: 40px
+            line-height: 45px
+          @media (max-width: $tabletS)
+            text-align: center
+            margin-top: 20px
+        .banner__buttons
+          margin-top: 88px
+          display: flex
+          margin-bottom: 50px
+          @media (max-width: $tabletL)
+            margin-top: 40px
+            flex-direction: column
+            align-items: center
+          @media (max-width: $tabletS)
+            flex-direction: row
+            margin-bottom: 20px
+          a
+            &:not(:last-child)
+              margin-right: 24px
+              @media (max-width: $tabletL)
+                margin-right: auto
+                margin-bottom: 30px
+              @media (max-width: $tabletS)
+                margin: 0 auto
+            display: block
+            padding: 18.5px 24px
+            border: 2px solid $color2
+            @media (max-width: $tabletL)
+              margin-right: auto
+            @media (max-width: $tabletS)
+              margin: 0 auto
+            span
+              display: block
+              text-align: center
+      .banner__images
+        width: 51.8%
+        display: flex
+        position: relative
+        @media (max-width: $tabletS)
+          width: 70%
+          margin: 0 auto
+        img
+          &:not(:first-child)
+            position: absolute
+          &:first-child
+            width: 100%
+            height: 100%
+            object-fit: contain
+          &:last-child
+            width: 27.9%
+            height: 16%
+            object-fit: contain
+            right: 0
+            bottom: -8.7%
+            @media (max-width: $tablet)
+              bottom: 8%
+            @media (max-width: $tabletS)
+              bottom: 0%
+              right: -5%
+          &:nth-child(2)
+            width: 29.4%
+            height: 31.7%
+            bottom: 6.4%
+            left: -23.9%
+            object-fit: contain
+    .banner__bottom
+      background-color: #fff
+      box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08)
+      border-radius: 4px
+      display: flex
+      padding-left: 95px
+      margin: 10px auto 0 -95px
+      @media (max-width: $tabletL)
+        flex-direction: column
+        margin: 0 auto
+        padding: 0
+      @media (max-width: $tabletS)
+        margin-top: 20px
+      .banner__dignity
+        &:not(:last-child)
+          margin-right: 43px
+        &:last-child
+          margin-right: 25px
+        display: flex
+        padding: 24px 0
+        align-items: center
+        @media (max-width: $tabletL)
+          margin-left: 25px
+        img
+          margin-right: 16px

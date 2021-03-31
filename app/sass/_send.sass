@@ -1,0 +1,51 @@
+.send
+  background-color: $color5
+  padding: 0 20px
+  .container
+    max-width: 1095px
+    padding: 80px 0
+    justify-content: space-between
+    align-items: center
+    @media (max-width: $tablet)
+      flex-direction: column
+    @media (max-width: $mobileL)
+      padding: 40px 0
+    .send__left
+      width: 100%
+      max-width: 510px
+      margin-right: 40px
+      @media (max-width: $tablet)
+        margin-right: 0
+        max-width: none
+        margin-bottom: 20px
+      h1
+        @media (max-width: $tablet)
+          text-align: center
+      p
+        margin-top: 24px
+        max-width: 425px
+        @media (max-width: $tablet)
+          max-width: none
+          text-align: center
+    form
+      width: 100%
+      max-width: 430px
+      display: flex
+      justify-content: space-between
+      @media (max-width: $tablet)
+        max-width: none
+        justify-content: center
+      input
+        width: 78%
+        padding: 24px 16px 24px 48px
+        background: #FFFFFF
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08)
+        border-radius: 6px
+        outline: none
+        height: 72px
+        margin-right: 4px
+        @media (max-width: $mobileL)
+          padding-left: 20px
+      button
+        margin: auto 0
+
